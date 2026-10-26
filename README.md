@@ -48,6 +48,23 @@ Settings > Build > Compiler からプロジェクトのコンパイラを
 
 以上をする必要がある。
 
+### 6章
+
+6章 6.3 で、pom.xmlの同期をすると上記をやり直す必要がある。
+
+```
+    <properties>
+        <java.version>25</java.version>
+        <maven.compiler.source>25</maven.compiler.source>
+        <maven.compiler.target>25</maven.compiler.target>
+        <maven.compiler.release>25</maven.compiler.release>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+```
+
+以上をpom.xmlに追加でも解決可能。
+
+
 ### 16章
 
 16章 16.4.6 で、pom.xmlの同期をすると上記をやり直す必要がある。
